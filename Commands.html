@@ -1,0 +1,83 @@
+<html>
+    <head> 
+        <title> Commands</title>
+    </head>
+
+    <body> 
+        <pre> 
+1) To install Django on our laptop use the command  -  pip install Django
+
+2) for checking the current python version  -  python or python --version
+
+3) Multiple python versions are allowed over a single system
+
+4) If want to install django in any particular version then use command - python -m pip install Django
+
+5) command is used to manage Django projects and applications. It provides a range of commands to help with various development and administrative tasks - django-admin
+
+6) Command to start a new project - Django-admin startproject BlogApp
+
+7) There are two folders with the same name BlogApp the main one is the name of the directory and the inside one is the name of the project.
+
+8) __init__.py is an empty file , the presence of this file in a directory signals to Python that this directory should be treated as a package. This allows you to import modules from this directory.
+
+9) settings.py contains the settings of our project
+
+10) urls.py contains the mappings and all
+
+11) wsgi.py web server gateway interface
+
+13) manage.py is a command line utility helps us to interact with the Django Project 
+
+14) python manage.py runserver command is used to start the Django development server or can say to run the manage.
+py file 
+
+15) py -m venv (name of environment) - command to create virtual environment so that the project related packages do not interfere with the global ones 
+
+16)  VirtualE\Scripts\activate.bat - Command to activate virtual Environment for the first time.
+
+17) django-admin startproject (Project name) - Command to start a new project in the folder
+
+18) django-admin startapp (app name) - Command to start a new app in the folder
+we can create multiple apps inside a project because Each app handles a specific feature or part of your project, making it easier to find and work on code.
+ b) You can reuse apps in different projects. For example, if you create a blog app, you can use it in other projects without rewriting the code.
+
+19) How Websites Work ?
+
+<img src = "WebWork.jpg" width="700" height="400">
+
+20) Role of Django 
+
+<img src = "DjangoRole.jpg" width="700" height="400">
+
+21) MVT(Model View Template) architecture of Django
+In Django's MVT (Model-View-Template) architecture, 
+Models are crucial for:
+
+ a)Data Representation: Define the structure of your database, representing tables and fields.
+ b)Data Manipulation: Perform CRUD operations (Create, Read, Update, Delete) and complex queries using Django's ORM.
+ c)Validation: Ensure data integrity through built-in and custom validation.
+ d)Business Logic: Encapsulate business logic related to your data, making it reusable and centralized.
+ e)Interaction: Provide data to views and templates, ensuring a clean separation of concerns.
+
+
+ <img src = "MVTWork.jpg" width="700" height="400">
+ Views are responsible for;
+
+ a) 1. Handling Requests
+ HTTP Requests: Views process HTTP requests from users and return HTTP responses. Each view corresponds to a specific URL endpoint.
+ Request Processing: Views handle the logic of processing user input, interacting with models, and determining what data to send to templates.
+    2. Connecting Models and Templates
+ Data Retrieval: Views retrieve data from models (the database) and pass it to templates for rendering.
+ Data Formatting: Views prepare and format the data needed by templates, ensuring that the right information is displayed to the user.
+    3. Business Logic
+ Processing Logic: Views contain the logic for processing user actions, such as form submissions, authentication, and other interactions.
+ Conditional Logic: Views handle different scenarios and conditions based on user input and application state.
+    4. Generating Responses
+ Rendering Templates: Views render templates with the data retrieved from models, generating the HTML content sent to the user's browser.
+ Redirecting: Views can redirect users to different URLs after certain actions, such as form submissions or login.
+ 
+22) URL Dispatcher - firstly the URL will come the project and then will be directed towards the urls file of app and then to views.py or whatever the path is specified.
+</pre>
+</body>
+</html>
